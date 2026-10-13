@@ -1,0 +1,324 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /fifo_coverage_pkg
+=== Design Unit: work.fifo_coverage_pkg
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na    97.65%
+        Coverpoints/Crosses         16        na        na        na
+            Covergroup Bins         68        65         3    95.58%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /fifo_coverage_pkg/FIFO_coverage/t_cvr_grp       97.65%        100          -    Uncovered            
+    covered/total bins:                                    65         68          -                      
+    missing/total bins:                                     3         68          -                      
+    % Hit:                                             95.58%        100          -                      
+    Coverpoint wr_en_cvr                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      1002          1          -    Covered              
+        bin auto[1]                                      3000          1          -    Covered              
+    Coverpoint rd_en_cvr                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      1002          1          -    Covered              
+        bin auto[1]                                      3000          1          -    Covered              
+    Coverpoint full_prev_cvr                          100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      3008          1          -    Covered              
+        bin auto[1]                                       994          1          -    Covered              
+    Coverpoint almostfull_prev_cvr                    100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      3001          1          -    Covered              
+        bin auto[1]                                      1001          1          -    Covered              
+    Coverpoint empty_prev_cvr                         100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      3006          1          -    Covered              
+        bin auto[1]                                       996          1          -    Covered              
+    Coverpoint almostempty_prev_cvr                   100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      3001          1          -    Covered              
+        bin auto[1]                                      1001          1          -    Covered              
+    Coverpoint overflow_cvr                           100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      3009          1          -    Covered              
+        bin auto[1]                                       993          1          -    Covered              
+    Coverpoint underflow_cvr                          100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      3008          1          -    Covered              
+        bin auto[1]                                       994          1          -    Covered              
+    Coverpoint wr_ack_cvr                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      1995          1          -    Covered              
+        bin auto[1]                                      2007          1          -    Covered              
+    Cross #cross__0#                                   87.50%        100          -    Uncovered            
+        covered/total bins:                                 7          8          -                      
+        missing/total bins:                                 1          8          -                      
+        % Hit:                                         87.50%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1],auto[1]>                   1          1          -    Covered              
+            bin <auto[1],auto[0],auto[1]>                 992          1          -    Covered              
+            bin <auto[0],auto[0],auto[1]>                   1          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                1999          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                1000          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                   8          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                   1          1          -    Covered              
+            bin <auto[0],auto[1],auto[1]>                   0          1          1    ZERO                 
+    Cross #cross__1#                                   87.50%        100          -    Uncovered            
+        covered/total bins:                                 7          8          -                      
+        missing/total bins:                                 1          8          -                      
+        % Hit:                                         87.50%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1],auto[1]>                 999          1          -    Covered              
+            bin <auto[0],auto[1],auto[1]>                   1          1          -    Covered              
+            bin <auto[1],auto[0],auto[1]>                   1          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                1001          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                 999          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                 999          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                   2          1          -    Covered              
+            bin <auto[0],auto[0],auto[1]>                   0          1          1    ZERO                 
+    Cross #cross__2#                                  100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1],auto[1]>                   1          1          -    Covered              
+            bin <auto[0],auto[1],auto[1]>                 993          1          -    Covered              
+            bin <auto[1],auto[0],auto[1]>                   1          1          -    Covered              
+            bin <auto[0],auto[0],auto[1]>                   1          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                1999          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                   7          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                 999          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                   1          1          -    Covered              
+    Cross #cross__3#                                   87.50%        100          -    Uncovered            
+        covered/total bins:                                 7          8          -                      
+        missing/total bins:                                 1          8          -                      
+        % Hit:                                         87.50%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1],auto[1]>                 999          1          -    Covered              
+            bin <auto[0],auto[1],auto[1]>                   1          1          -    Covered              
+            bin <auto[1],auto[0],auto[1]>                   1          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                1001          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                 999          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                 999          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                   2          1          -    Covered              
+            bin <auto[0],auto[0],auto[1]>                   0          1          1    ZERO                 
+    Cross #cross__4#                                  100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1],auto[1]>                   1          1          -    Covered              
+            bin <auto[1],auto[0],auto[1]>                 992          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                1999          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                1000          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                   8          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                   2          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin not_wr_en_and_overflow               0                     -    ZERO                 
+    Cross #cross__5#                                  100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1],auto[1]>                   1          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                1999          1          -    Covered              
+            bin <auto[0],auto[1],auto[1]>                 993          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                   7          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                1000          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                   2          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin not_rd_en_and_underflow              0                     -    ZERO                 
+    Cross #cross__6#                                  100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1],auto[1]>                1999          1          -    Covered              
+            bin <auto[1],auto[0],auto[1]>                   8          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                   1          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                1000          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                 992          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                   2          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin wr_en_zero_and_ack_one               0                     -    ZERO                 
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /fifo_coverage_pkg/FIFO_coverage/t_cvr_grp       97.65%        100          -    Uncovered            
+    covered/total bins:                                    65         68          -                      
+    missing/total bins:                                     3         68          -                      
+    % Hit:                                             95.58%        100          -                      
+    Coverpoint wr_en_cvr                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      1002          1          -    Covered              
+        bin auto[1]                                      3000          1          -    Covered              
+    Coverpoint rd_en_cvr                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      1002          1          -    Covered              
+        bin auto[1]                                      3000          1          -    Covered              
+    Coverpoint full_prev_cvr                          100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      3008          1          -    Covered              
+        bin auto[1]                                       994          1          -    Covered              
+    Coverpoint almostfull_prev_cvr                    100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      3001          1          -    Covered              
+        bin auto[1]                                      1001          1          -    Covered              
+    Coverpoint empty_prev_cvr                         100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      3006          1          -    Covered              
+        bin auto[1]                                       996          1          -    Covered              
+    Coverpoint almostempty_prev_cvr                   100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      3001          1          -    Covered              
+        bin auto[1]                                      1001          1          -    Covered              
+    Coverpoint overflow_cvr                           100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      3009          1          -    Covered              
+        bin auto[1]                                       993          1          -    Covered              
+    Coverpoint underflow_cvr                          100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      3008          1          -    Covered              
+        bin auto[1]                                       994          1          -    Covered              
+    Coverpoint wr_ack_cvr                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      1995          1          -    Covered              
+        bin auto[1]                                      2007          1          -    Covered              
+    Cross #cross__0#                                   87.50%        100          -    Uncovered            
+        covered/total bins:                                 7          8          -                      
+        missing/total bins:                                 1          8          -                      
+        % Hit:                                         87.50%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1],auto[1]>                   1          1          -    Covered              
+            bin <auto[1],auto[0],auto[1]>                 992          1          -    Covered              
+            bin <auto[0],auto[0],auto[1]>                   1          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                1999          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                1000          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                   8          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                   1          1          -    Covered              
+            bin <auto[0],auto[1],auto[1]>                   0          1          1    ZERO                 
+    Cross #cross__1#                                   87.50%        100          -    Uncovered            
+        covered/total bins:                                 7          8          -                      
+        missing/total bins:                                 1          8          -                      
+        % Hit:                                         87.50%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1],auto[1]>                 999          1          -    Covered              
+            bin <auto[0],auto[1],auto[1]>                   1          1          -    Covered              
+            bin <auto[1],auto[0],auto[1]>                   1          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                1001          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                 999          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                 999          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                   2          1          -    Covered              
+            bin <auto[0],auto[0],auto[1]>                   0          1          1    ZERO                 
+    Cross #cross__2#                                  100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1],auto[1]>                   1          1          -    Covered              
+            bin <auto[0],auto[1],auto[1]>                 993          1          -    Covered              
+            bin <auto[1],auto[0],auto[1]>                   1          1          -    Covered              
+            bin <auto[0],auto[0],auto[1]>                   1          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                1999          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                   7          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                 999          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                   1          1          -    Covered              
+    Cross #cross__3#                                   87.50%        100          -    Uncovered            
+        covered/total bins:                                 7          8          -                      
+        missing/total bins:                                 1          8          -                      
+        % Hit:                                         87.50%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1],auto[1]>                 999          1          -    Covered              
+            bin <auto[0],auto[1],auto[1]>                   1          1          -    Covered              
+            bin <auto[1],auto[0],auto[1]>                   1          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                1001          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                 999          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                 999          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                   2          1          -    Covered              
+            bin <auto[0],auto[0],auto[1]>                   0          1          1    ZERO                 
+    Cross #cross__4#                                  100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1],auto[1]>                   1          1          -    Covered              
+            bin <auto[1],auto[0],auto[1]>                 992          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                1999          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                1000          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                   8          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                   2          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin not_wr_en_and_overflow               0                     -    ZERO                 
+    Cross #cross__5#                                  100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1],auto[1]>                   1          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                1999          1          -    Covered              
+            bin <auto[0],auto[1],auto[1]>                 993          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                   7          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                1000          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                   2          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin not_rd_en_and_underflow              0                     -    ZERO                 
+    Cross #cross__6#                                  100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1],auto[1]>                1999          1          -    Covered              
+            bin <auto[1],auto[0],auto[1]>                   8          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                   1          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                1000          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                 992          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                   2          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin wr_en_zero_and_ack_one               0                     -    ZERO                 
+
+TOTAL COVERGROUP COVERAGE: 97.65%  COVERGROUP TYPES: 1
+
+Total Coverage By Instance (filtered view): 97.65%
+

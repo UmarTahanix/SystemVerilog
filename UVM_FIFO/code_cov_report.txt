@@ -1,0 +1,1902 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /top/DUT/FIFO_sva_inst
+=== Design Unit: work.FIFO_sva
+=================================================================================
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      4         4         0   100.00%
+
+================================Expression Details================================
+
+Expression Coverage for instance /top/DUT/FIFO_sva_inst --
+
+  File FIFO_sva.sv
+----------------Focused Expression View-----------------
+Line       15 Item    1  (rd_en && ~empty)
+Expression totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       16 Item    1  (wr_en && ~full)
+Expression totals: 2 of 2 input terms covered = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       4         4         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /top/DUT/FIFO_sva_inst --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File FIFO_sva.sv
+    15              1                          9     
+    16              1                         10     
+    18              1                          1     
+    19              1                          1     
+
+=================================================================================
+=== Instance: /top/DUT
+=== Design Unit: work.FIFO
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        24        24         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /top/DUT
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File FIFO.sv
+------------------------------------IF Branch------------------------------------
+    19                                      4004     Count coming in to IF
+    19              1                          1     
+    24              1                       4003     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    26                                      4003     Count coming in to IF
+    26              1                       2007     
+    31              1                       1996     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    33                                      1996     Count coming in to IF
+    33              1                        993     
+                                            1003     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    41                                      4004     Count coming in to IF
+    41              1                          1     
+    45              1                       4003     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    47                                      4003     Count coming in to IF
+    47              1                       2006     
+    52              1                        994     
+                                            1003     All False Count
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    59                                        23     Count coming in to IF
+    59              1                          1     
+    62              1                         22     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    63                                        22     Count coming in to CASE
+    64              1                          9     
+    65              1                          8     
+    66              1                          5     
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    73                                        18     Count coming in to IF
+    73              1                          1     
+    73              2                         17     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    74                                        18     Count coming in to IF
+    74              1                          2     
+    74              2                         16     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    75                                        18     Count coming in to IF
+    75              1                          2     
+    75              2                         16     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    76                                        18     Count coming in to IF
+    76              1                          3     
+    76              2                         15     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       8         7         1    87.50%
+
+================================Condition Details================================
+
+Condition Coverage for instance /top/DUT --
+
+  File FIFO.sv
+----------------Focused Condition View-------------------
+Line       33 Item    1  (fifo_if.full & fifo_if.wr_en)
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+     Input Term   Covered  Reason for no coverage   Hint
+    -----------  --------  -----------------------  --------------
+   fifo_if.full         N  '_0' not hit             Hit '_0'
+  fifo_if.wr_en         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  fifo_if.full_0        fifo_if.wr_en                 
+  Row   2:          1  fifo_if.full_1        fifo_if.wr_en                 
+  Row   3:          1  fifo_if.wr_en_0       fifo_if.full                  
+  Row   4:          1  fifo_if.wr_en_1       fifo_if.full                  
+
+----------------Focused Condition View-------------------
+Line       52 Item    1  (fifo_if.empty && fifo_if.rd_en)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       73 Item    1  (count == fifo_if.FIFO_DEPTH)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       74 Item    1  (count == 0)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       75 Item    1  (count == (fifo_if.FIFO_DEPTH - 1))
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       76 Item    1  (count == 1)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      4         4         0   100.00%
+
+================================Expression Details================================
+
+Expression Coverage for instance /top/DUT --
+
+  File FIFO.sv
+----------------Focused Expression View-----------------
+Line       14 Item    1  (fifo_if.rd_en && ~fifo_if.empty)
+Expression totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       15 Item    1  (fifo_if.wr_en && ~fifo_if.full)
+Expression totals: 2 of 2 input terms covered = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      28        28         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /top/DUT --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File FIFO.sv
+    14              1                          9     
+    15              1                         10     
+    18              1                       4004     
+    20              1                          1     
+    21              1                          1     
+    22              1                          1     
+    25              1                       4003     
+    27              1                       2007     
+    28              1                       2007     
+    29              1                       2007     
+    32              1                       1996     
+    34              1                        993     
+    40              1                       4004     
+    42              1                          1     
+    43              1                          1     
+    46              1                       4003     
+    48              1                       2006     
+    49              1                       2006     
+    53              1                        994     
+    58              1                         23     
+    60              1                          1     
+    64              1                          9     
+    65              1                          8     
+    66              1                          5     
+    73              1                         19     
+    74              1                         19     
+    75              1                         19     
+    76              1                         19     
+
+=================================================================================
+=== Instance: /top
+=== Design Unit: work.top
+=================================================================================
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       5         5         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /top --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File top.sv
+    9               1                          1     
+    10              1                       8006     
+    10              2                       8005     
+    36              1                          1     
+    37              1                          1     
+
+=================================================================================
+=== Instance: /fifo_seq_item_pkg
+=== Design Unit: work.fifo_seq_item_pkg
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        10         2         8    20.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /fifo_seq_item_pkg
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fifo_seq_item.sv
+------------------------------------IF Branch------------------------------------
+    6                                    ***0***     Count coming in to IF
+    6               1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    6                                       4003     Count coming in to IF
+    6               2                    ***0***     
+                                            4003     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    6                                    ***0***     Count coming in to IF
+    6               3                    ***0***     
+    6               4                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    6                                       4003     Count coming in to IF
+    6               5                    ***0***     
+                                            4003     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    6                                    ***0***     Count coming in to IF
+    6               6                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       2         0         2     0.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /fifo_seq_item_pkg --
+
+  File fifo_seq_item.sv
+----------------Focused Condition View-------------------
+Line       6 Item    1  (name != 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (name != 0)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (name != 0)_0         -                             
+  Row   2:    ***0***  (name != 0)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       6 Item    2  (tmp_data__ != null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+            Input Term   Covered  Reason for no coverage   Hint
+           -----------  --------  -----------------------  --------------
+  (tmp_data__ != null)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target              Non-masking condition(s)      
+ ---------  ---------  --------------------    -------------------------     
+  Row   1:          1  (tmp_data__ != null)_0  -                             
+  Row   2:    ***0***  (tmp_data__ != null)_1  -                             
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      15         5        10    33.33%
+
+================================Statement Details================================
+
+Statement Coverage for instance /fifo_seq_item_pkg --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fifo_seq_item.sv
+    6               1                    ***0***     
+    6               2                    ***0***     
+    6               3                    ***0***     
+    6               4                    ***0***     
+    6               5                    ***0***     
+    6               6                       4003     
+    6               7                    ***0***     
+    6               8                    ***0***     
+    6               9                       4003     
+    6              10                    ***0***     
+    18              1                       8008     
+    19              1                       8008     
+    20              1                       8008     
+    24              1                    ***0***     
+    31              1                    ***0***     
+
+=================================================================================
+=== Instance: /fifo_read_only_seq_pkg
+=== Design Unit: work.fifo_read_only_seq_pkg
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        10         2         8    20.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /fifo_read_only_seq_pkg
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fifo_read_only_seq.sv
+------------------------------------IF Branch------------------------------------
+    7                                    ***0***     Count coming in to IF
+    7               1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                          1     Count coming in to IF
+    7               2                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                    ***0***     Count coming in to IF
+    7               3                    ***0***     
+    7               4                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                          1     Count coming in to IF
+    7               5                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                    ***0***     Count coming in to IF
+    7               6                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       2         0         2     0.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /fifo_read_only_seq_pkg --
+
+  File fifo_read_only_seq.sv
+----------------Focused Condition View-------------------
+Line       7 Item    1  (name != 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (name != 0)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (name != 0)_0         -                             
+  Row   2:    ***0***  (name != 0)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       7 Item    2  (tmp_data__ != null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+            Input Term   Covered  Reason for no coverage   Hint
+           -----------  --------  -----------------------  --------------
+  (tmp_data__ != null)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target              Non-masking condition(s)      
+ ---------  ---------  --------------------    -------------------------     
+  Row   1:          1  (tmp_data__ != null)_0  -                             
+  Row   2:    ***0***  (tmp_data__ != null)_1  -                             
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      15         7         8    46.66%
+
+================================Statement Details================================
+
+Statement Coverage for instance /fifo_read_only_seq_pkg --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fifo_read_only_seq.sv
+    7               1                    ***0***     
+    7               2                    ***0***     
+    7               3                    ***0***     
+    7               4                    ***0***     
+    7               5                    ***0***     
+    7               6                          1     
+    7               7                    ***0***     
+    7               8                    ***0***     
+    7               9                          1     
+    7              10                    ***0***     
+    12              1                          1     
+    16              1                       1000     
+    17              1                       1000     
+    19              1                       1000     
+    23              1                       1000     
+
+=================================================================================
+=== Instance: /fifo_idle_seq_pkg
+=== Design Unit: work.fifo_idle_seq_pkg
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        10         2         8    20.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /fifo_idle_seq_pkg
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fifo_idle_seq.sv
+------------------------------------IF Branch------------------------------------
+    7                                    ***0***     Count coming in to IF
+    7               1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                          2     Count coming in to IF
+    7               2                    ***0***     
+                                               2     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                    ***0***     Count coming in to IF
+    7               3                    ***0***     
+    7               4                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                          2     Count coming in to IF
+    7               5                    ***0***     
+                                               2     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                    ***0***     Count coming in to IF
+    7               6                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       2         0         2     0.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /fifo_idle_seq_pkg --
+
+  File fifo_idle_seq.sv
+----------------Focused Condition View-------------------
+Line       7 Item    1  (name != 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (name != 0)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (name != 0)_0         -                             
+  Row   2:    ***0***  (name != 0)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       7 Item    2  (tmp_data__ != null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+            Input Term   Covered  Reason for no coverage   Hint
+           -----------  --------  -----------------------  --------------
+  (tmp_data__ != null)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target              Non-masking condition(s)      
+ ---------  ---------  --------------------    -------------------------     
+  Row   1:          1  (tmp_data__ != null)_0  -                             
+  Row   2:    ***0***  (tmp_data__ != null)_1  -                             
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      17         9         8    52.94%
+
+================================Statement Details================================
+
+Statement Coverage for instance /fifo_idle_seq_pkg --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fifo_idle_seq.sv
+    7               1                    ***0***     
+    7               2                    ***0***     
+    7               3                    ***0***     
+    7               4                    ***0***     
+    7               5                    ***0***     
+    7               6                          2     
+    7               7                    ***0***     
+    7               8                    ***0***     
+    7               9                          2     
+    7              10                    ***0***     
+    12              1                          1     
+    16              1                          2     
+    18              1                          2     
+    20              1                          2     
+    21              1                          2     
+    22              1                          2     
+    24              1                          2     
+
+=================================================================================
+=== Instance: /fifo_write_only_seq_pkg
+=== Design Unit: work.fifo_write_only_seq_pkg
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        10         2         8    20.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /fifo_write_only_seq_pkg
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fifo_write_only_seq.sv
+------------------------------------IF Branch------------------------------------
+    7                                    ***0***     Count coming in to IF
+    7               1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                          1     Count coming in to IF
+    7               2                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                    ***0***     Count coming in to IF
+    7               3                    ***0***     
+    7               4                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                          1     Count coming in to IF
+    7               5                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                    ***0***     Count coming in to IF
+    7               6                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       2         0         2     0.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /fifo_write_only_seq_pkg --
+
+  File fifo_write_only_seq.sv
+----------------Focused Condition View-------------------
+Line       7 Item    1  (name != 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (name != 0)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (name != 0)_0         -                             
+  Row   2:    ***0***  (name != 0)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       7 Item    2  (tmp_data__ != null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+            Input Term   Covered  Reason for no coverage   Hint
+           -----------  --------  -----------------------  --------------
+  (tmp_data__ != null)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target              Non-masking condition(s)      
+ ---------  ---------  --------------------    -------------------------     
+  Row   1:          1  (tmp_data__ != null)_0  -                             
+  Row   2:    ***0***  (tmp_data__ != null)_1  -                             
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      15         7         8    46.66%
+
+================================Statement Details================================
+
+Statement Coverage for instance /fifo_write_only_seq_pkg --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fifo_write_only_seq.sv
+    7               1                    ***0***     
+    7               2                    ***0***     
+    7               3                    ***0***     
+    7               4                    ***0***     
+    7               5                    ***0***     
+    7               6                          1     
+    7               7                    ***0***     
+    7               8                    ***0***     
+    7               9                          1     
+    7              10                    ***0***     
+    12              1                          1     
+    16              1                       1000     
+    17              1                       1000     
+    19              1                       1000     
+    23              1                       1000     
+
+=================================================================================
+=== Instance: /fifo_write_and_read_seq_pkg
+=== Design Unit: work.fifo_write_and_read_seq_pkg
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        10         2         8    20.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /fifo_write_and_read_seq_pkg
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fifo_write_and_read_seq.sv
+------------------------------------IF Branch------------------------------------
+    7                                    ***0***     Count coming in to IF
+    7               1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                          2     Count coming in to IF
+    7               2                    ***0***     
+                                               2     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                    ***0***     Count coming in to IF
+    7               3                    ***0***     
+    7               4                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                          2     Count coming in to IF
+    7               5                    ***0***     
+                                               2     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                    ***0***     Count coming in to IF
+    7               6                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       2         0         2     0.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /fifo_write_and_read_seq_pkg --
+
+  File fifo_write_and_read_seq.sv
+----------------Focused Condition View-------------------
+Line       7 Item    1  (name != 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (name != 0)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (name != 0)_0         -                             
+  Row   2:    ***0***  (name != 0)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       7 Item    2  (tmp_data__ != null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+            Input Term   Covered  Reason for no coverage   Hint
+           -----------  --------  -----------------------  --------------
+  (tmp_data__ != null)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target              Non-masking condition(s)      
+ ---------  ---------  --------------------    -------------------------     
+  Row   1:          1  (tmp_data__ != null)_0  -                             
+  Row   2:    ***0***  (tmp_data__ != null)_1  -                             
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      15         7         8    46.66%
+
+================================Statement Details================================
+
+Statement Coverage for instance /fifo_write_and_read_seq_pkg --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fifo_write_and_read_seq.sv
+    7               1                    ***0***     
+    7               2                    ***0***     
+    7               3                    ***0***     
+    7               4                    ***0***     
+    7               5                    ***0***     
+    7               6                          2     
+    7               7                    ***0***     
+    7               8                    ***0***     
+    7               9                          2     
+    7              10                    ***0***     
+    12              1                          1     
+    16              1                       2000     
+    17              1                       2000     
+    19              1                       2000     
+    23              1                       2000     
+
+=================================================================================
+=== Instance: /fifo_reset_seq_pkg
+=== Design Unit: work.fifo_reset_seq_pkg
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        10         2         8    20.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /fifo_reset_seq_pkg
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fifo_reset_seq.sv
+------------------------------------IF Branch------------------------------------
+    7                                    ***0***     Count coming in to IF
+    7               1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                          1     Count coming in to IF
+    7               2                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                    ***0***     Count coming in to IF
+    7               3                    ***0***     
+    7               4                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                          1     Count coming in to IF
+    7               5                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                    ***0***     Count coming in to IF
+    7               6                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       2         0         2     0.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /fifo_reset_seq_pkg --
+
+  File fifo_reset_seq.sv
+----------------Focused Condition View-------------------
+Line       7 Item    1  (name != 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (name != 0)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (name != 0)_0         -                             
+  Row   2:    ***0***  (name != 0)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       7 Item    2  (tmp_data__ != null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+            Input Term   Covered  Reason for no coverage   Hint
+           -----------  --------  -----------------------  --------------
+  (tmp_data__ != null)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target              Non-masking condition(s)      
+ ---------  ---------  --------------------    -------------------------     
+  Row   1:          1  (tmp_data__ != null)_0  -                             
+  Row   2:    ***0***  (tmp_data__ != null)_1  -                             
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      18        10         8    55.55%
+
+================================Statement Details================================
+
+Statement Coverage for instance /fifo_reset_seq_pkg --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fifo_reset_seq.sv
+    7               1                    ***0***     
+    7               2                    ***0***     
+    7               3                    ***0***     
+    7               4                    ***0***     
+    7               5                    ***0***     
+    7               6                          1     
+    7               7                    ***0***     
+    7               8                    ***0***     
+    7               9                          1     
+    7              10                    ***0***     
+    12              1                          1     
+    16              1                          1     
+    18              1                          1     
+    20              1                          1     
+    21              1                          1     
+    22              1                          1     
+    23              1                          1     
+    25              1                          1     
+
+=================================================================================
+=== Instance: /fifo_coverage_pkg
+=== Design Unit: work.fifo_coverage_pkg
+=================================================================================
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      22        20         2    90.90%
+
+================================Statement Details================================
+
+Statement Coverage for instance /fifo_coverage_pkg --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fifo_coverage.sv
+    8               1                    ***0***     
+    8               2                    ***0***     
+    8               3                          2     
+    16              1                          1     
+    17              1                          1     
+    18              1                          1     
+    19              1                          1     
+    58              1                          1     
+    59              1                          1     
+    63              1                          1     
+    64              1                          1     
+    65              1                          1     
+    69              1                          1     
+    70              1                          1     
+    74              1                          1     
+    75              1                          1     
+    76              1                       4004     
+    77              1                       4003     
+    80              1                       4003     
+    81              1                       4003     
+    82              1                       4003     
+    83              1                       4003     
+
+=================================================================================
+=== Instance: /fifo_scoreboard_pkg
+=== Design Unit: work.fifo_scoreboard_pkg
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        52        39        13    75.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /fifo_scoreboard_pkg
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fifo_scoreboard.sv
+------------------------------------IF Branch------------------------------------
+    56                                      4003     Count coming in to IF
+    56              1                    ***0***     
+    61              1                       4003     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    57                                   ***0***     Count coming in to IF
+    57              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    62                                      4003     Count coming in to IF
+    62              1                    ***0***     
+                                            4003     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    66                                      4003     Count coming in to IF
+    66              1                    ***0***     
+    70              1                       4003     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    73                                      4003     Count coming in to IF
+    73              1                    ***0***     
+    77              1                       4003     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    80                                      4003     Count coming in to IF
+    80              1                    ***0***     
+    84              1                       4003     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    87                                      4003     Count coming in to IF
+    87              1                    ***0***     
+    91              1                       4003     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    94                                      4003     Count coming in to IF
+    94              1                    ***0***     
+    98              1                       4003     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    101                                     4003     Count coming in to IF
+    101             1                    ***0***     
+    105             1                       4003     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    108                                     4003     Count coming in to IF
+    108             1                    ***0***     
+    112             1                       4003     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    118                                     4003     Count coming in to IF
+    118             1                          1     
+                                            4002     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    139                                     4002     Count coming in to IF
+    139             1                       2000     
+    156             1                       1000     
+    165             1                       1000     
+                                               2     All False Count
+Branch totals: 4 hits of 4 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    140                                     2000     Count coming in to IF
+    140             1                          1     
+    145             1                          1     
+    150             1                       1998     
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    157                                     1000     Count coming in to IF
+    157             1                        992     
+    161             1                          8     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    166                                     1000     Count coming in to IF
+    166             1                        993     
+    170             1                          7     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    175                                     4002     Count coming in to IF
+    175             1                       2007     
+                                            1995     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    182                                     4002     Count coming in to IF
+    182             1                       2006     
+                                            1996     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    188                                     4002     Count coming in to CASE
+    189             1                          9     
+    190             1                          8     
+    191             1                       3985     
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    195                                     4002     Count coming in to IF
+    195             1                        994     
+    195             2                       3008     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    196                                     4002     Count coming in to IF
+    196             1                        995     
+    196             2                       3007     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    197                                     4002     Count coming in to IF
+    197             1                       1001     
+    197             2                       3001     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    198                                     4002     Count coming in to IF
+    198             1                       1002     
+    198             2                       3000     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    203                                        1     Count coming in to IF
+    203             1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    204                                        1     Count coming in to IF
+    204             1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                      18         8        10    44.44%
+
+================================Condition Details================================
+
+Condition Coverage for instance /fifo_scoreboard_pkg --
+
+  File fifo_scoreboard.sv
+----------------Focused Condition View-------------------
+Line       56 Item    1  (this.seq_item.data_out !== this.data_out_ref)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                                      Input Term   Covered  Reason for no coverage   Hint
+                                     -----------  --------  -----------------------  --------------
+  (this.seq_item.data_out !== this.data_out_ref)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                                        Non-masking condition(s)      
+ ---------  ---------  --------------------                              -------------------------     
+  Row   1:          1  (this.seq_item.data_out !== this.data_out_ref)_0  -                             
+  Row   2:    ***0***  (this.seq_item.data_out !== this.data_out_ref)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       66 Item    1  (this.full_ref !== this.seq_item.full)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                              Input Term   Covered  Reason for no coverage   Hint
+                             -----------  --------  -----------------------  --------------
+  (this.full_ref !== this.seq_item.full)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                                Non-masking condition(s)      
+ ---------  ---------  --------------------                      -------------------------     
+  Row   1:          1  (this.full_ref !== this.seq_item.full)_0  -                             
+  Row   2:    ***0***  (this.full_ref !== this.seq_item.full)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       73 Item    1  (this.empty_ref !== this.seq_item.empty)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                                Input Term   Covered  Reason for no coverage   Hint
+                               -----------  --------  -----------------------  --------------
+  (this.empty_ref !== this.seq_item.empty)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                                  Non-masking condition(s)      
+ ---------  ---------  --------------------                        -------------------------     
+  Row   1:          1  (this.empty_ref !== this.seq_item.empty)_0  -                             
+  Row   2:    ***0***  (this.empty_ref !== this.seq_item.empty)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       80 Item    1  (this.almostfull_ref !== this.seq_item.almostfull)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                                          Input Term   Covered  Reason for no coverage   Hint
+                                         -----------  --------  -----------------------  --------------
+  (this.almostfull_ref !== this.seq_item.almostfull)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                                            Non-masking condition(s)      
+ ---------  ---------  --------------------                                  -------------------------     
+  Row   1:          1  (this.almostfull_ref !== this.seq_item.almostfull)_0  -                             
+  Row   2:    ***0***  (this.almostfull_ref !== this.seq_item.almostfull)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       87 Item    1  (this.almostempty_ref !== this.seq_item.almostempty)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                                            Input Term   Covered  Reason for no coverage   Hint
+                                           -----------  --------  -----------------------  --------------
+  (this.almostempty_ref !== this.seq_item.almostempty)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                                              Non-masking condition(s)      
+ ---------  ---------  --------------------                                    -------------------------     
+  Row   1:          1  (this.almostempty_ref !== this.seq_item.almostempty)_0  -                             
+  Row   2:    ***0***  (this.almostempty_ref !== this.seq_item.almostempty)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       94 Item    1  (this.overflow_ref !== this.seq_item.overflow)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                                      Input Term   Covered  Reason for no coverage   Hint
+                                     -----------  --------  -----------------------  --------------
+  (this.overflow_ref !== this.seq_item.overflow)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                                        Non-masking condition(s)      
+ ---------  ---------  --------------------                              -------------------------     
+  Row   1:          1  (this.overflow_ref !== this.seq_item.overflow)_0  -                             
+  Row   2:    ***0***  (this.overflow_ref !== this.seq_item.overflow)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       101 Item    1  (this.underflow_ref !== this.seq_item.underflow)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                                        Input Term   Covered  Reason for no coverage   Hint
+                                       -----------  --------  -----------------------  --------------
+  (this.underflow_ref !== this.seq_item.underflow)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                                          Non-masking condition(s)      
+ ---------  ---------  --------------------                                -------------------------     
+  Row   1:          1  (this.underflow_ref !== this.seq_item.underflow)_0  -                             
+  Row   2:    ***0***  (this.underflow_ref !== this.seq_item.underflow)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       108 Item    1  (this.wr_ack_ref !== this.seq_item.wr_ack)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                                  Input Term   Covered  Reason for no coverage   Hint
+                                 -----------  --------  -----------------------  --------------
+  (this.wr_ack_ref !== this.seq_item.wr_ack)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                                    Non-masking condition(s)      
+ ---------  ---------  --------------------                          -------------------------     
+  Row   1:          1  (this.wr_ack_ref !== this.seq_item.wr_ack)_0  -                             
+  Row   2:    ***0***  (this.wr_ack_ref !== this.seq_item.wr_ack)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       139 Item    1  (seq_item.wr_en && seq_item.rd_en)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       156 Item    1  (seq_item.wr_en && ~seq_item.rd_en)
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+  seq_item.wr_en         Y
+  seq_item.rd_en         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  seq_item.wr_en_0      -                             
+  Row   2:          1  seq_item.wr_en_1      ~seq_item.rd_en               
+  Row   3:          1  seq_item.rd_en_0      seq_item.wr_en                
+  Row   4:    ***0***  seq_item.rd_en_1      seq_item.wr_en                
+
+----------------Focused Condition View-------------------
+Line       165 Item    1  (~seq_item.wr_en && seq_item.rd_en)
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+  seq_item.wr_en         N  '_1' not hit             Hit '_1'
+  seq_item.rd_en         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  seq_item.wr_en_0      seq_item.rd_en                
+  Row   2:    ***0***  seq_item.wr_en_1      -                             
+  Row   3:          1  seq_item.rd_en_0      ~seq_item.wr_en               
+  Row   4:          1  seq_item.rd_en_1      ~seq_item.wr_en               
+
+----------------Focused Condition View-------------------
+Line       195 Item    1  (this.count_ref == 8)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       196 Item    1  (this.count_ref == 0)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       197 Item    1  (this.count_ref == (8 - 1))
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       198 Item    1  (this.count_ref == 1)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      93        74        19    79.56%
+
+================================Statement Details================================
+
+Statement Coverage for instance /fifo_scoreboard_pkg --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fifo_scoreboard.sv
+    7               1                    ***0***     
+    7               2                    ***0***     
+    7               3                          2     
+    23              1                          1     
+    24              1                          1     
+    27              1                          1     
+    28              1                          1     
+    29              1                          1     
+    30              1                          1     
+    31              1                          1     
+    32              1                          1     
+    33              1                          1     
+    34              1                          1     
+    35              1                          1     
+    36              1                          1     
+    37              1                          1     
+    41              1                          1     
+    42              1                          1     
+    43              1                          1     
+    47              1                          1     
+    48              1                          1     
+    52              1                          1     
+    53              1                          1     
+    54              1                       4004     
+    55              1                       4003     
+    57              1                    ***0***     
+    59              1                    ***0***     
+    62              1                    ***0***     
+    63              1                       4003     
+    67              1                    ***0***     
+    68              1                    ***0***     
+    71              1                       4003     
+    74              1                    ***0***     
+    75              1                    ***0***     
+    78              1                       4003     
+    81              1                    ***0***     
+    82              1                    ***0***     
+    85              1                       4003     
+    88              1                    ***0***     
+    89              1                    ***0***     
+    92              1                       4003     
+    95              1                    ***0***     
+    96              1                    ***0***     
+    99              1                       4003     
+    102             1                    ***0***     
+    103             1                    ***0***     
+    106             1                       4003     
+    109             1                    ***0***     
+    110             1                    ***0***     
+    113             1                       4003     
+    119             1                          1     
+    120             1                          1     
+    121             1                          1     
+    122             1                          1     
+    123             1                          1     
+    124             1                          1     
+    125             1                          1     
+    126             1                          1     
+    127             1                          1     
+    128             1                          1     
+    129             1                          1     
+    132             1                       4002     
+    133             1                       4002     
+    134             1                       4002     
+    135             1                       4002     
+    136             1                       4002     
+    141             1                          1     
+    142             1                          1     
+    146             1                          1     
+    147             1                          1     
+    151             1                       1998     
+    152             1                       1998     
+    158             1                        992     
+    159             1                        992     
+    162             1                          8     
+    167             1                        993     
+    168             1                        993     
+    171             1                          7     
+    176             1                       2007     
+    177             1                       2007     
+    178             1                       2007     
+    183             1                       2006     
+    184             1                       2006     
+    189             1                          9     
+    190             1                          8     
+    191             1                       3985     
+    195             1                       4002     
+    196             1                       4002     
+    197             1                       4002     
+    198             1                       4002     
+    202             1                          1     
+    203             1                          1     
+    204             1                          1     
+
+=================================================================================
+=== Instance: /fifo_config_pkg
+=== Design Unit: work.fifo_config_pkg
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        10         0        10     0.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /fifo_config_pkg
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fifo_config.sv
+------------------------------------IF Branch------------------------------------
+    6                                    ***0***     Count coming in to IF
+    6               1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    6                                    ***0***     Count coming in to IF
+    6               2                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    6                                    ***0***     Count coming in to IF
+    6               3                    ***0***     
+    6               4                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    6                                    ***0***     Count coming in to IF
+    6               5                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    6                                    ***0***     Count coming in to IF
+    6               6                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       2         0         2     0.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /fifo_config_pkg --
+
+  File fifo_config.sv
+----------------Focused Condition View-------------------
+Line       6 Item    1  (name != 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (name != 0)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (name != 0)_0         -                             
+  Row   2:    ***0***  (name != 0)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       6 Item    2  (tmp_data__ != null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+            Input Term   Covered  Reason for no coverage   Hint
+           -----------  --------  -----------------------  --------------
+  (tmp_data__ != null)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target              Non-masking condition(s)      
+ ---------  ---------  --------------------    -------------------------     
+  Row   1:    ***0***  (tmp_data__ != null)_0  -                             
+  Row   2:    ***0***  (tmp_data__ != null)_1  -                             
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      11         1        10     9.09%
+
+================================Statement Details================================
+
+Statement Coverage for instance /fifo_config_pkg --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fifo_config.sv
+    6               1                    ***0***     
+    6               2                    ***0***     
+    6               3                    ***0***     
+    6               4                    ***0***     
+    6               5                    ***0***     
+    6               6                    ***0***     
+    6               7                    ***0***     
+    6               8                    ***0***     
+    6               9                    ***0***     
+    6              10                    ***0***     
+    11              1                          1     
+
+=================================================================================
+=== Instance: /fifo_monitor_pkg
+=== Design Unit: work.fifo_monitor_pkg
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         2         1         1    50.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /fifo_monitor_pkg
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fifo_monitor.sv
+------------------------------------IF Branch------------------------------------
+    37                                      4003     Count coming in to IF
+    37              1                    ***0***     
+                                            4003     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      23        20         3    86.95%
+
+================================Statement Details================================
+
+Statement Coverage for instance /fifo_monitor_pkg --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fifo_monitor.sv
+    7               1                    ***0***     
+    7               2                    ***0***     
+    7               3                          2     
+    14              1                          1     
+    15              1                          1     
+    19              1                          1     
+    20              1                          1     
+    21              1                       4004     
+    22              1                       4004     
+    23              1                       4003     
+    24              1                       4003     
+    25              1                       4003     
+    26              1                       4003     
+    27              1                       4003     
+    28              1                       4003     
+    29              1                       4003     
+    30              1                       4003     
+    31              1                       4003     
+    32              1                       4003     
+    33              1                       4003     
+    34              1                       4003     
+    36              1                       4003     
+    37              1                    ***0***     
+
+=================================================================================
+=== Instance: /fifo_driver_pkg
+=== Design Unit: work.fifo_driver_pkg
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         2         1         1    50.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /fifo_driver_pkg
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fifo_driver.sv
+------------------------------------IF Branch------------------------------------
+    29                                      4003     Count coming in to IF
+    29              1                    ***0***     
+                                            4003     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      15        12         3    80.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /fifo_driver_pkg --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fifo_driver.sv
+    7               1                    ***0***     
+    7               2                    ***0***     
+    7               3                          2     
+    13              1                          1     
+    17              1                          1     
+    18              1                          1     
+    19              1                          1     
+    20              1                       4004     
+    22              1                       4003     
+    23              1                       4003     
+    24              1                       4003     
+    25              1                       4003     
+    26              1                       4003     
+    27              1                       4003     
+    29              1                    ***0***     
+
+=================================================================================
+=== Instance: /fifo_sequencer_pkg
+=== Design Unit: work.fifo_sequencer_pkg
+=================================================================================
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       4         2         2    50.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /fifo_sequencer_pkg --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fifo_sequencer.sv
+    7               1                    ***0***     
+    7               2                    ***0***     
+    7               3                          2     
+    10              1                          1     
+
+=================================================================================
+=== Instance: /fifo_agent_pkg
+=== Design Unit: work.fifo_agent_pkg
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         4         1         3    25.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /fifo_agent_pkg
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fifo_agent.sv
+------------------------------------IF Branch------------------------------------
+    25                                         1     Count coming in to IF
+    25              1                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    26                                   ***0***     Count coming in to IF
+    26              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      15        12         3    80.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /fifo_agent_pkg --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fifo_agent.sv
+    11              1                    ***0***     
+    11              2                    ***0***     
+    11              3                          2     
+    20              1                          1     
+    24              1                          1     
+    26              1                    ***0***     
+    28              1                          1     
+    29              1                          1     
+    30              1                          1     
+    31              1                          1     
+    35              1                          1     
+    36              1                          1     
+    37              1                          1     
+    38              1                          1     
+    39              1                          1     
+
+=================================================================================
+=== Instance: /fifo_env_pkg
+=== Design Unit: work.fifo_env_pkg
+=================================================================================
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      11         9         2    81.81%
+
+================================Statement Details================================
+
+Statement Coverage for instance /fifo_env_pkg --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fifo_env.sv
+    10              1                    ***0***     
+    10              2                    ***0***     
+    10              3                          2     
+    17              1                          1     
+    21              1                          1     
+    23              1                          1     
+    24              1                          1     
+    25              1                          1     
+    29              1                          1     
+    30              1                          1     
+    31              1                          1     
+
+=================================================================================
+=== Instance: /fifo_test_pkg
+=== Design Unit: work.fifo_test_pkg
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        32        15        17    46.87%
+
+================================Branch Details================================
+
+Branch Coverage for instance /fifo_test_pkg
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fifo_test.sv
+------------------------------------IF Branch------------------------------------
+    33                                         1     Count coming in to IF
+    33              1                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    34                                   ***0***     Count coming in to IF
+    34              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    53                                         1     Count coming in to IF
+    53              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    55                                         1     Count coming in to IF
+    55              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    58                                         1     Count coming in to IF
+    58              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    60                                         1     Count coming in to IF
+    60              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    63                                         1     Count coming in to IF
+    63              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    65                                         1     Count coming in to IF
+    65              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    68                                         1     Count coming in to IF
+    68              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    70                                         1     Count coming in to IF
+    70              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    73                                         1     Count coming in to IF
+    73              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    75                                         1     Count coming in to IF
+    75              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    78                                         1     Count coming in to IF
+    78              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    80                                         1     Count coming in to IF
+    80              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    83                                         1     Count coming in to IF
+    83              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    85                                         1     Count coming in to IF
+    85              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      39        36         3    92.30%
+
+================================Statement Details================================
+
+Statement Coverage for instance /fifo_test_pkg --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File fifo_test.sv
+    15              1                    ***0***     
+    15              2                    ***0***     
+    15              3                          4     
+    27              1                          1     
+    31              1                          1     
+    32              1                          1     
+    34              1                    ***0***     
+    35              1                          1     
+    37              1                          1     
+    39              1                          1     
+    40              1                          1     
+    41              1                          1     
+    42              1                          1     
+    43              1                          1     
+    44              1                          1     
+    49              1                          1     
+    50              1                          1     
+    53              1                          1     
+    54              1                          1     
+    55              1                          1     
+    58              1                          1     
+    59              1                          1     
+    60              1                          1     
+    63              1                          1     
+    64              1                          1     
+    65              1                          1     
+    68              1                          1     
+    69              1                          1     
+    70              1                          1     
+    73              1                          1     
+    74              1                          1     
+    75              1                          1     
+    78              1                          1     
+    79              1                          1     
+    80              1                          1     
+    83              1                          1     
+    84              1                          1     
+    85              1                          1     
+    87              1                          1     
+
+
+Total Coverage By Instance (filtered view): 65.23%
+

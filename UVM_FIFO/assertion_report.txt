@@ -1,0 +1,127 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /top/DUT/FIFO_sva_inst
+=== Design Unit: work.FIFO_sva
+=================================================================================
+
+Assertion Coverage:
+    Assertions                      13        13         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/top/DUT/FIFO_sva_inst/rst_assert
+                     FIFO_sva.sv(20)                    0          1
+/top/DUT/FIFO_sva_inst/wr_ack_assert
+                     FIFO_sva.sv(47)                    0          1
+/top/DUT/FIFO_sva_inst/overflow_assert
+                     FIFO_sva.sv(60)                    0          1
+/top/DUT/FIFO_sva_inst/underflow_assert
+                     FIFO_sva.sv(73)                    0          1
+/top/DUT/FIFO_sva_inst/empty_assert
+                     FIFO_sva.sv(86)                    0          1
+/top/DUT/FIFO_sva_inst/full_assert
+                     FIFO_sva.sv(99)                    0          1
+/top/DUT/FIFO_sva_inst/almostempty_assert
+                     FIFO_sva.sv(111)                   0          1
+/top/DUT/FIFO_sva_inst/almostfull_assert
+                     FIFO_sva.sv(124)                   0          1
+/top/DUT/FIFO_sva_inst/wr_ptr_wraparound_assert
+                     FIFO_sva.sv(132)                   0          1
+/top/DUT/FIFO_sva_inst/rd_ptr_wraparound_assert
+                     FIFO_sva.sv(140)                   0          1
+/top/DUT/FIFO_sva_inst/wr_ptr_threshold_assert
+                     FIFO_sva.sv(148)                   0          1
+/top/DUT/FIFO_sva_inst/rd_ptr_threshold_assert
+                     FIFO_sva.sv(156)                   0          1
+/top/DUT/FIFO_sva_inst/count_threshold_assert
+                     FIFO_sva.sv(165)                   0          1
+
+=================================================================================
+=== Instance: /fifo_read_only_seq_pkg
+=== Design Unit: work.fifo_read_only_seq_pkg
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       1         1         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/fifo_read_only_seq_pkg/FIFO_read_only_seq/body/#ublk#143532583#16/immed__21
+                     fifo_read_only_seq.sv(21)          0          1
+
+=================================================================================
+=== Instance: /fifo_write_only_seq_pkg
+=== Design Unit: work.fifo_write_only_seq_pkg
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       1         1         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/fifo_write_only_seq_pkg/FIFO_write_only_seq/body/#ublk#220570231#16/immed__21
+                     fifo_write_only_seq.sv(21)
+                                                        0          1
+
+=================================================================================
+=== Instance: /fifo_write_and_read_seq_pkg
+=== Design Unit: work.fifo_write_and_read_seq_pkg
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       1         1         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/fifo_write_and_read_seq_pkg/FIFO_write_and_read_seq/body/#ublk#122298375#16/immed__21
+                     fifo_write_and_read_seq.sv(21)
+                                                        0          1
+
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/top/DUT/FIFO_sva_inst/rst_assert
+                     FIFO_sva.sv(20)                    0          1
+/top/DUT/FIFO_sva_inst/wr_ack_assert
+                     FIFO_sva.sv(47)                    0          1
+/top/DUT/FIFO_sva_inst/overflow_assert
+                     FIFO_sva.sv(60)                    0          1
+/top/DUT/FIFO_sva_inst/underflow_assert
+                     FIFO_sva.sv(73)                    0          1
+/top/DUT/FIFO_sva_inst/empty_assert
+                     FIFO_sva.sv(86)                    0          1
+/top/DUT/FIFO_sva_inst/full_assert
+                     FIFO_sva.sv(99)                    0          1
+/top/DUT/FIFO_sva_inst/almostempty_assert
+                     FIFO_sva.sv(111)                   0          1
+/top/DUT/FIFO_sva_inst/almostfull_assert
+                     FIFO_sva.sv(124)                   0          1
+/top/DUT/FIFO_sva_inst/wr_ptr_wraparound_assert
+                     FIFO_sva.sv(132)                   0          1
+/top/DUT/FIFO_sva_inst/rd_ptr_wraparound_assert
+                     FIFO_sva.sv(140)                   0          1
+/top/DUT/FIFO_sva_inst/wr_ptr_threshold_assert
+                     FIFO_sva.sv(148)                   0          1
+/top/DUT/FIFO_sva_inst/rd_ptr_threshold_assert
+                     FIFO_sva.sv(156)                   0          1
+/top/DUT/FIFO_sva_inst/count_threshold_assert
+                     FIFO_sva.sv(165)                   0          1
+/fifo_read_only_seq_pkg/FIFO_read_only_seq/body/#ublk#143532583#16/immed__21
+                     fifo_read_only_seq.sv(21)          0          1
+/fifo_write_only_seq_pkg/FIFO_write_only_seq/body/#ublk#220570231#16/immed__21
+                     fifo_write_only_seq.sv(21)
+                                                        0          1
+/fifo_write_and_read_seq_pkg/FIFO_write_and_read_seq/body/#ublk#122298375#16/immed__21
+                     fifo_write_and_read_seq.sv(21)
+                                                        0          1
+
+Total Coverage By Instance (filtered view): 100.00%
+
